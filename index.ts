@@ -1,6 +1,6 @@
 class Retangulo {
-    protected altura: number;
-    protected largura: number;
+    private altura: number;
+    private largura: number;
 
     constructor(altura:number, largura:number){
         this.altura = altura;
@@ -27,8 +27,6 @@ class Retangulo {
 class Quadrado extends Retangulo{
     constructor(lado:number){
         super(lado, lado)
-        this.altura = lado
-        this.largura = lado
     }
 
 }
